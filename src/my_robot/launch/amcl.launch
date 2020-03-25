@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
   <!-- map server -->
@@ -11,22 +12,41 @@
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
-    <param name="initial_pose_x" value="0"/>  # initial x-coordinate value
-    <param name="initial_pose_y" value="0"/>  # initial y-coordinate value
-    <param name="initial_pose_a" value="1.57"/>  # initial yaw coordinate value
 
+    <!--Overall filter parameters-->
+    <param name="initial_pose_x" value="0.0"/>  # initial x-coordinate value
+    <param name="initial_pose_y" value="0.0"/>  # initial y-coordinate value
+    <param name="initial_pose_a" value="0"/>  # initial yaw coordinate value
+		<param name="min_particles" value="10"/>	
+    <param name="max_particles" value="50"/>
+		<param name="update_min_d" value="0.2"/>	#Translational movement required before performing a filter update.(default: 0.2 meters)
+    <param name="update_min_a" value="0.123"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)
+
+    <!--Laser model parameters-->
+    <param name="laser_model_type" value="likelihood_field"/>
+    <param name="laser_min_range" value="likelihood_field"/> # Minimum scan range to be considered; -1.0 will cause the laser's reported minimum range to be used.(double, default: -1.0)
+    <param name="laser_max_range" value="likelihood_field"/> # Maximum scan range to be considered; -1.0 will cause the laser's reported maximum range to be used.(double, default: -1.0)
+		<param name="laser_max_beams" value="likelihood_field"/> # How many evenly-spaced beams in each scan to be used when updating the filter.(int, default: 30)
+    <param name="laser_z_hit" value="likelihood_field"/> # Mixture weight for the z_hit part of the model.(double, default: 0.95)
+    <param name="laser_z_rand" value="likelihood_field"/> # Mixture weight for the z_rand part of the model.(double, default: 0.05)
+    
+    <!--Odometry model parameters-->
+    <param name="laser_model_type" value="likelihood_field"/>
+~ 
+
+	
   </node>
 
   <!-- move_base -->
-  <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
-    <remap from="scan" to="my_robot/laser/scan"/>
-    <param name="base_global_planner" value="navfn/NavfnROS" />
-    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
-		<rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
-    <rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />
-    <rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />
-  </node>
+<!--  <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">-->
+<!--    <remap from="scan" to="my_robot/laser/scan"/>-->
+<!--    <param name="base_global_planner" value="navfn/NavfnROS" />-->
+<!--    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>-->
+<!--		<rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />-->
+<!--    <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />-->
+<!--    <rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />-->
+<!--    <rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />-->
+<!--    <rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />-->
+<!--  </node>-->
 
 </launch>
