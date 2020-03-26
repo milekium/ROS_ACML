@@ -1,9 +1,10 @@
 global_costmap:
    global_frame: map
-   robot_base_frame: chassis
-   update_frequency: 1.0
-   publish_frequency: 1.0
-   height: 25.0
-   resolution: 0.01
+   robot_base_frame: robot_footprint
+   update_frequency: 0.5 # The frequency in Hz of how often the global map is updated with sensor information. The higher this number, the greater the load on your computer's CPU. Especially for the global map, one can generally get away with a relatively small value of between 1.0 and 5.0.
+   publish_frequency: 0.5
+   width: 25.0
+   height: 18.0
+   resolution: 0.01 # The resolution in meters of the rolling map. This should match the resolution set in the YAML file for your map
    static_map: true
-   rolling_window: false
+   rolling_window: false # The global map is generally not updated as the robot moves to we set this parameter to false
