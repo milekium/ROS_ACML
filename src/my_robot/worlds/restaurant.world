@@ -440,7 +440,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>3.61024 2.24837 9.38761 3.14159 1.57079 3.14159</pose>
+        <pose frame=''>-4 0 10 3.14159 1.57079 3.14159</pose>
         <view_controller>ortho</view_controller>
         <projection_type>orthographic</projection_type>
       </camera>
