@@ -15,10 +15,10 @@
     <param name="initial_pose_x" value="-7.5"/>  # initial x-coordinate value
     <param name="initial_pose_y" value="0.0"/>  # initial y-coordinate value
     <param name="initial_pose_a" value="0"/>  # initial yaw coordinate value
-		<param name="min_particles" value="10"/>	
-    <param name="max_particles" value="50"/>
-		<param name="update_min_d" value="0.1"/>	#Translational movement required before performing a filter update.(default: 0.2 meters)
-    <param name="update_min_a" value="0.2618"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)0.5236
+		<param name="min_particles" value="50"/>	
+    <param name="max_particles" value="100"/>
+		<param name="update_min_d" value="0.01"/>	#Translational movement required before performing a filter update.(default: 0.2 meters)
+    <param name="update_min_a" value="0.02618"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)0.5236
     <param name="kld_err" value="0.01"/> # Maximum error between the true distribution and the estimated distribution. (double, default: 0.01)
     <param name="kld_z" value="0.99"/> # Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err.(double, default: 0.99)
     <param name="resample_interval" value="2"/> # Number of filter updates required before resampling.(int, default: 2)
