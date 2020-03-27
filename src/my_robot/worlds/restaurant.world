@@ -85,10 +85,10 @@
       <wall_time>1585153418 458471861</wall_time>
       <iterations>0</iterations>
       <model name='ball'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>1.5 -4.5 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>0 0 1.15 0 -0 0</pose>
+          <pose frame=''>1.5 -4.5 1.15 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -592,10 +592,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -690,10 +690,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -788,10 +788,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -886,10 +886,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -984,10 +984,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1082,10 +1082,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1180,10 +1180,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1278,10 +1278,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1376,10 +1376,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1474,10 +1474,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1572,10 +1572,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1670,10 +1670,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1768,10 +1768,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1866,10 +1866,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -1964,10 +1964,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2062,10 +2062,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2160,10 +2160,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2258,10 +2258,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2356,10 +2356,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2454,10 +2454,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2552,10 +2552,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2650,10 +2650,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2748,10 +2748,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2846,10 +2846,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -2944,10 +2944,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3042,10 +3042,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3140,10 +3140,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3238,10 +3238,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3336,10 +3336,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3434,10 +3434,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3532,10 +3532,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3630,10 +3630,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3728,10 +3728,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3826,10 +3826,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -3924,10 +3924,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -4022,10 +4022,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -4120,10 +4120,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -4218,10 +4218,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
@@ -4316,10 +4316,10 @@
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>10</max_contacts>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0.5 0 -0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 0.9</size>
+              <size>2.2 1.5 1.1</size>
             </box>
           </geometry>
           <surface>
