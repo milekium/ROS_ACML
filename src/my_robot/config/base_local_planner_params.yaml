@@ -23,11 +23,11 @@ TrajectoryPlannerROS:
   vtheta_samples: 20
 # Trajectory Scoring Parameters
   meter_scoring: true
-  pdist_scale: 0.6
-  gdist_scale: 0.8
-  occdist_scale: 0.01
+  pdist_scale: 0.9 # The relative importance of sticking to the global path as opposed to getting to the goal. Set this parameter larger than the gdist_scale to favor following the global path more closely.
+  gdist_scale: 0.1 # The relative importance of getting to the goal rather than sticking to the global path. Set this parameter larger than the pdist_scale to favor getting to the goal by whatever path necessary.
+  occdist_scale: 0.9 # The relative importance of avoiding obstacles.
   heading_lookahead: 0.325
-  dwa: true
+  dwa: false # Whether or not to use the Dynamic Window Approach when simulating trajectories into the future.
 # Oscillation Prevention Parameters
   oscillation_reset_dist: 0.05
 # Differential-drive robot configuration : If the robot is holonomic configuration, set to true other vice set to false. Chefbot is a non holonomic robot.
