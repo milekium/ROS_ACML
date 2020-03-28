@@ -25,25 +25,25 @@
     <collision name='chassis_collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size="0.6 0.2 0.04"/>
       </geometry>
     </collision>
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".6 .2 .1"/>
+        <box size="0.6 0.2 0.04"/>
       </geometry>
     </visual>
     <collision name='chassis_top_collision'>
-      <origin xyz="0 0 0.075" rpy=" 0 0 0"/> 
+      <origin xyz="0 0 0.065" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".05 .05 .05"/>
+        <box size="0.25 0.05 0.09"/>
       </geometry>
     </collision>
     <visual name='chassis_top_visual'>
-      <origin xyz="0 0 0.075" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0.065" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".05 .05 .05"/>
+        <box size="0.25 0.05 0.09"/>
       </geometry>
     </visual>
   </link>
@@ -179,7 +179,7 @@
 
 	<!-- sensors -->
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.325 0 0" rpy="0 0 0"/>
+    <origin xyz="0.275 0 0.045" rpy="0 0 0"/>
     <child link="camera"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -209,7 +209,7 @@
 	</link>	
 
   <joint type="fixed" name="hokuyo_joint">
-    <origin xyz="-0.26 0 0.205" rpy="0 0 0"/>
+    <origin xyz="0.275 0 -0.055" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -222,7 +222,7 @@
       </geometry>
     </collision>
     <visual name='hokuyo_visual'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0" rpy=" 3.14159 0 0"/>
       <geometry>
 				<mesh filename="package://my_robot/meshes/hokuyo.dae" />
       </geometry>
@@ -240,7 +240,7 @@
 
 	<!-- plate -->
   <joint type="fixed" name="plate_hinge">
-    <origin xyz="0 0 0.11" rpy="0 0 0"/>
+    <origin xyz="0 0 0.12" rpy="0 0 0"/>
     <child link="plate"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -267,17 +267,5 @@
           izz="0.1"
       />
     </inertial>
-    <collision name='plate_top_collision'>
-      <origin xyz="-0.26 0 0.035" rpy=" 0 0 0"/> 
-      <geometry>
-        <box size=".07 .07 .05"/>
-      </geometry>
-    </collision>
-    <visual name='plate_top_visual'>
-      <origin xyz="-0.26 0 0.035" rpy=" 0 0 0"/>
-      <geometry>
-        <box size=".07 .07 .05"/>
-      </geometry>
-    </visual>
 	</link>
 </robot>
