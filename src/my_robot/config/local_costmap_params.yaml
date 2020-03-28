@@ -9,6 +9,6 @@ local_costmap:
    static_map: false
    rolling_window: true
 
-   tranform_tolerance: 0.5
-   planner_frequency: 1.0
-   planner_patiente: 5.0
+#   tranform_tolerance: 0.5
+#   planner_frequency: 1.0
+#   planner_patiente: 5.0
