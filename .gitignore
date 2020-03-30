@@ -1,4 +1,6 @@
+src/my_robot/config/costmap_common_params0.yaml
 env.txt
 devel/
 build/
 src/pgm_map_creator/
+.gitignore
