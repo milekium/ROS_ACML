@@ -1,14 +1,14 @@
 map_type: costmap
 
-obstacle_range: 2.0 # 2.0 If the robot detects an obstacle closer than x.x meters, it will put the obstacle in the costmap.
-raytrace_range: 3.0 # 3.0. used to clean/clear the costmap and update the free space in it when the robot moves
+obstacle_range: 1.0 # 2.0
+raytrace_range: 2.0 # 3.0
 
-transform_tolerance: 0.25 # 0.0. parameter configures the maximum latency for the transforms. With the planner_frequency parameter, can configure the rate in Hz at which to run the planning loop
+transform_tolerance: 0.2 # 0.0
 
-robot_radius: 0.1 # 0.0
-inflation_radius: 0.15 # 0.0. The radius in meters that obstacles will be inflated in the map. If your robot is having trouble passing through narrow doorways or other tight spaces, trying reducing this value slightly. Conversely, if the robot keeps running into things, try increasing the value.
-cost_scaling_factor: 10.0 # attribute modifies the behavior of the robot around the obstacles. You can make a behavior aggressive or conservative by changing the parameter.e −cost_scaling_factor×(distance_from_obstacle−inscribed_radius)× (costmap_2d::INSCRIBED_INFLATED_OBSTACLE−1)
+robot_radius: 0.3 # 0.0
+inflation_radius: 0.5 # 0.0
+cost_scaling_factor: 5.0
 
-observation_sources: laser_scan_sensor # the sensors used by the navigation stack to get the data from the real world and calculate the path. can use a point cloud to do the same.
+observation_sources: laser_scan_sensor
 
-laser_scan_sensor: {sensor_frame: hokuyo, data_type: LaserScan, topic: /my_robot/laser/scan, marking: true, clearing: true}
+laser_scan_sensor: {sensor_frame: hokuyo, data_type: LaserScan, topic: /udacity_bot/laser/scan, marking: true, clearing: true}

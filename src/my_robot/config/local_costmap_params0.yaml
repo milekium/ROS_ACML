@@ -1,0 +1,10 @@
+local_costmap:
+   global_frame: odom
+   robot_base_frame: robot_footprint
+   update_frequency: 0.50
+   publish_frequency: 0.50
+   width: 5.0 # The x dimension in meters of the rolling map.
+   height: 5.0 # The y dimension in meters of the rolling map.
+   resolution: 0.01
+   static_map: true
+   rolling_window: false
