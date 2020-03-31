@@ -13,15 +13,15 @@
 
         <!--Overall filter parameters-->
     <param name="initial_pose_x" value="-7.5"/>  # initial x-coordinate value
-    <param name="initial_pose_y" value="0.0"/>  # initial y-coordinate value
-    <param name="initial_pose_a" value="0"/>  # initial yaw coordinate value
-		<param name="min_particles" value="100"/>	
-    <param name="max_particles" value="500"/>
+    <param name="initial_pose_y" value="11.5"/>  # initial y-coordinate value
+    <param name="initial_pose_a" value="-1.57079"/>  # initial yaw coordinate value
+		<param name="min_particles" value="10"/>	
+    <param name="max_particles" value="50"/>
 		<param name="update_min_d" value="0.15" />	#Translational movement required before performing a filter update.(default: 0.2 meters)
-    <param name="update_min_a" value="0.1"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)0.5236
-    <param name="kld_err" value="0.05"/> # Maximum error between the true distribution and the estimated distribution. (double, default: 0.01)
+    <param name="update_min_a" value="0.2"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)0.5236
+    <param name="kld_err" value="0.01"/> # Maximum error between the true distribution and the estimated distribution. (double, default: 0.01)
     <param name="kld_z" value="0.99"/> # Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err.(double, default: 0.99)
-    <param name="resample_interval" value="100"/> # Number of filter updates required before resampling.(int, default: 2)
+    <param name="resample_interval" value="4"/> # Number of filter updates required before resampling.(int, default: 2)
     <param name="transform_tolerance" value="0.2"/> # Time with which to post-date the transform that is published, to indicate that this transform is valid into the future. (double, default: 0.1 seconds)
     <param name="recovery_alpha_slow" value="0.0"/> # Exponential decay rate for the slow average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.001.(double, default: 0.0 (disabled))
     <param name="recovery_alpha_fast" value="0.0"/> # Exponential decay rate for the fast average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.1.(double, default: 0.0 (disabled))

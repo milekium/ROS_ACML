@@ -1,30 +1,37 @@
-controller_frequency: 0.5
+controller_frequency: 0.25
 
 TrajectoryPlannerROS:
   max_vel_x: 0.5 #0.25
   min_vel_x: -0.5 #0.01
-  max_vel_y: 0.5 #0.25
-  min_vel_y: -0.5 #0.01
-  max_vel_theta: 1.57 #1.5
-  min_vel_theta: -1.0
-  min_in_place_vel_theta: 0.57
+
+  max_vel_theta: 0.157 #1.5
+  min_vel_theta: -0.157
+  min_in_place_vel_theta: 1.57
+
+  y_vels: -0.5,-0.5,0.5,-0.5
 
   acc_lim_theta: 3.14
   acc_lim_x: 2.0
   acc_lim_y: 2.0
 
   sim_time: 10.0
-  sim_granularity: 0.001
+  sim_granularity: 0.1
   angular_sim_granularity: 0.0157
+
+  simple_attractor: false
  
   vx_samples: 20.0
   vy_samples: 20.0
   vtheta_samples: 20.0
 
   pdist_scale: 0.6 #0.6
-  gdist_scale: 0.1 #0.8
+  gdist_scale: 0.8 #0.8
   occdist_scale: 0.02
 
   meter_scoring: true
 
   holonomic_robot: true
+#  heading_lookahead: 4.75
+#  heading_scoring: true
+#  heading_scoring_timestep: 0.64
+     
