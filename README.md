@@ -85,11 +85,12 @@ oscillation_distance: 0.3 # How far in meters the robot must move to be consider
 planner_frequency: 1 # The rate in Hz at which to run the global planning loop. If the frequency is set to 0.0, the global planner will only run when a new goal is received or the local planner reports that its path is blocked. New in navigation 1.6.0(double, default: 0.0)
 max_planning_retries: -1 # How many times to allow for planning retries before executing recovery behaviors. A value of -1.0 corresponds to an infinite retries.(int32_t, default: -1)
 oscillation_reset_dist: 0.02(double, default: 0.05) How far the robot must travel in meters before oscillation flags are reset.
+
 ### TrajectoryPlannerROS:
+
 #### Robot Configuration Parameters, these are the velocity limit of the
 robotmax_vel_x: 0.3
 min_vel_x: 0.1
-
 #### Angular velocity limit
 max_vel_theta: 1.0
 min_vel_theta: -1.0

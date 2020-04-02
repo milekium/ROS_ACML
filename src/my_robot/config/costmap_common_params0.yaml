@@ -1,9 +1,0 @@
-map_type: costmap
-obstacle_range: 12.0 # 2.0 If the robot detects an obstacle closer than x.x meters, it will put the obstacle in the costmap.
-raytrace_range: 5.0 # 3.0. used to clean/clear the costmap and update the free space in it when the robot moves
-transform_tolerance: 0.9
-robot_radius: 0.3 # 0.0
-inflation_radius: 0.15 
-cost_scaling_factor: 10.0
-observation_sources: laser_scan_sensor # the sensors used by the navigation stack to get the data from the real world and calculate the path. can use a point cloud to do the same.
-laser_scan_sensor: {sensor_frame: hokuyo, data_type: LaserScan, topic: /my_robot/laser/scan, marking: true, clearing: true}
