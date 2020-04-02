@@ -12,7 +12,7 @@
 
   <!-- Launch other relevant files-->
   <include file="$(find my_robot)/launch/robot_description.launch"/>
-  <include file="$(find my_robot)/launch/amcl.launch"/>
+<!--  <include file="$(find my_robot)/launch/amcl.launch"/>-->
 
   <!-- World File -->
   <arg name="world_file" default="$(find my_robot)/worlds/restaurant01.world"/>
@@ -34,9 +34,16 @@
               -x $(arg x) -y $(arg y) -z $(arg z)
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
+ <!-- Controller parameters-->
+  <rosparam file="$(find my_robot)/config/my_robot_common.yaml" command="load"/>
+
+  <!--  Load Controller-->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/my_robot"  args="joint_state_controller leftFrontWheel_effort_controller leftBackWheel_effort_controller rightFrontWheel_effort_controller  rightBackWheel_effort_controller jackal_velocity_controller"/>
+
+  <!-- Convert joint states to TF transforms -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns="/my_robot" output="screen"/>
+
 	<!--launch rviz-->
 	<node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
-
-
 	
 </launch>

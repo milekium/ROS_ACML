@@ -4,7 +4,7 @@
   <!-- map server -->
   <arg name="map_file" default="$(find my_robot)/maps/restaurant_map.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"> 
-		<param name="frame_id" value="map"/> # The frame to set in the header of the published map.	(string, default: "map")
+		<param name="frame_id" value="map"/> 
 	</node>
 
       <!-- amcl -->
@@ -12,13 +12,13 @@
     <remap from="scan" to="my_robot/laser/scan"/>
 
         <!--Overall filter parameters-->
-    <param name="initial_pose_x" value="-7.5"/>  # initial x-coordinate value
-    <param name="initial_pose_y" value="11.5"/>  # initial y-coordinate value
-    <param name="initial_pose_a" value="-1.57079"/>  # initial yaw coordinate value
+    <param name="initial_pose_x" value="-7.5"/> 
+    <param name="initial_pose_y" value="11.5"/>  
+    <param name="initial_pose_a" value="-1.57079"/> 
 		<param name="min_particles" value="1"/>	
     <param name="max_particles" value="50"/>
-		<param name="update_min_d" value="0.01" />	#Translational movement required before performing a filter update.(default: 0.2 meters)
-    <param name="update_min_a" value="0.02"/> #Rotational movement required before performing a filter update. (default: π/6.0 radians)0.5236
+		<param name="update_min_d" value="0.01" />	
+    <param name="update_min_a" value="0.02"/> 
     <param name="kld_err" value="0.01"/> # Maximum error between the true distribution and the estimated distribution. (double, default: 0.01)
     <param name="kld_z" value="0.99"/> # Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err.(double, default: 0.99)
     <param name="resample_interval" value="4"/> # Number of filter updates required before resampling.(int, default: 2)
@@ -50,7 +50,7 @@
 		<param name="laser_likelihood_max_dist" value="2.0"/> # Maximum distance to do obstacle inflation on map, for use in likelihood_field model.(double, default: 2.0 meters)
     
 				<!--Odometry model parameters-->
-    <param name="odom_model_type" value="omni"/> # Which model to use, either "diff", "omni", "diff-corrected" or "omni-corrected".(string, default: "diff")
+    <param name="odom_model_type" value="diff-corrected"/> # Which model to use, either "diff", "omni", "diff-corrected" or "omni-corrected".(string, default: "diff")
 		<param name="odom_alpha1" value="0.2"/> # Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion.(double, default: 0.2)
 		<param name="odom_alpha2" value="0.2"/> # Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion.(double, default: 0.2)
 		<param name="odom_alpha3" value="0.8"/> # Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion.(double, default: 0.2)
@@ -64,6 +64,7 @@
 
   <!-- Static transform between /odom and /map -->
 	<node pkg="tf" type="static_transform_publisher" name="odom_map_broadcaster" args="0 0 0 1.57079 0 0 /odom /map 100" />
+<!--  <node pkg="tf" type="static_transform_publisher" name="odom_2_base_footprint" args="0 0 0 0 0 0 /odom /base_footprint 100"/>-->
 
   <!-- move_base -->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">

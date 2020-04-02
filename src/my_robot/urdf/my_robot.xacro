@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 
-<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="my_robot" xmlns:xacro="http://ros.org/wiki/xacro">
 
 	<xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo"/>
 
@@ -57,6 +57,16 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="left_front_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_front_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="left_front_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='left_front_wheel'>
     <collision name='left_front_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -89,6 +99,16 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="right_front_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_front_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="right_front_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='right_front_wheel'>
     <collision name='right_front_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -121,6 +141,16 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="left_back_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_back_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="left_back_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='left_back_wheel'>
     <collision name='left_back_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -153,6 +183,16 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="right_back_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_back_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="right_back_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='right_back_wheel'>
     <collision name='right_back_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
