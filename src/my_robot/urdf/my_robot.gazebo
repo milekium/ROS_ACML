@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <robot name="my_robot" xmlns:xacro="http://ros.org/wiki/xacro">
 
-<!--	<gazebo>-->
-<!--    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">-->
-<!--      <commandTopic>cmd_vel</commandTopic>-->
-<!--      <odometryTopic>odom</odometryTopic>-->
-<!--      <odometryFrame>odom</odometryFrame>-->
-<!--      <odometryRate>30.0</odometryRate>-->
-<!--      <robotBaseFrame>robot_footprint</robotBaseFrame>-->
-<!--    </plugin>-->
-<!--  </gazebo>-->
+	<gazebo>
+    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>100.0</odometryRate>
+      <robotBaseFrame>robot_footprint</robotBaseFrame>
+    </plugin>
+  </gazebo>
 <!--  <gazebo>-->
 <!--    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">-->
 <!--      <alwaysOn>true</alwaysOn>-->
@@ -38,13 +38,12 @@
   <gazebo>
     <static>false</static>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <legacyModeNS>true</legacyModeNS>
+      <legacyModeNS>false</legacyModeNS>
       <robotNamespace>/my_robot</robotNamespace>
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
   </gazebo>
-  
-  <!-- camera -->
+  <!--   camera -->
   <gazebo reference="camera">
     <sensor type="camera" name="camera1">
       <update_rate>10.0</update_rate>

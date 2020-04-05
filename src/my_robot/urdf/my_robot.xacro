@@ -77,7 +77,7 @@
     <visual name='left_front_wheel_visual'>
       <origin xyz="0 -0.02 0" rpy=" 0 1.5707 0"/>
       <geometry>
-				<mesh filename="package://my_robot/meshes/mecanum0.stl" scale="1 1 1"/>
+				<mesh filename="package://my_robot/meshes/mecanum.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <inertial>
